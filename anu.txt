@@ -1,0 +1,46 @@
+lenovo@DESKTOP-1V10EO8 MINGW64 ~/Desktop/shellscripts (master)
+$ vi anu.sh
+
+lenovo@DESKTOP-1V10EO8 MINGW64 ~/Desktop/shellscripts (master)
+$ cat anu.sh
+#1/bin/bash
+# timestable - print out a multiplication table
+for i in 123
+do
+        for j in 123
+        do
+                value='expr $i\* $j'
+                echo -n"$value"
+        done
+        echo
+done
+
+
+lenovo@DESKTOP-1V10EO8 MINGW64 ~/Desktop/shellscripts (master)
+$ chmod u+x anu.sh
+
+lenovo@DESKTOP-1V10EO8 MINGW64 ~/Desktop/shellscripts (master)
+$ ./anu.sh
+-nexpr $i\* $j
+
+
+lenovo@DESKTOP-1V10EO8 MINGW64 ~/Desktop/shellscripts (master)
+$ vi anu.sh
+
+lenovo@DESKTOP-1V10EO8 MINGW64 ~/Desktop/shellscripts (master)
+$ chmod u+x anu.sh
+
+lenovo@DESKTOP-1V10EO8 MINGW64 ~/Desktop/shellscripts (master)
+$ ./anu.sh
+-nexpr $i\* $j
+-nexpr $i\* $j
+-nexpr $i\* $j
+
+-nexpr $i\* $j
+-nexpr $i\* $j
+-nexpr $i\* $j
+
+-nexpr $i\* $j
+-nexpr $i\* $j
+-nexpr $i\* $j
+
