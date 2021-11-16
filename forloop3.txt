@@ -1,0 +1,19 @@
+lenovo@DESKTOP-1V10EO8 MINGW64 ~/Desktop/shellscripts (main)
+$ vi forloop3.sh
+
+lenovo@DESKTOP-1V10EO8 MINGW64 ~/Desktop/shellscripts (main)
+$ cat forloop3.sh
+#!/bin/bash
+# file-poke - tell us stuff about files
+for i in  *; do
+        echo -n "$i"
+        grep $i $i
+done
+
+lenovo@DESKTOP-1V10EO8 MINGW64 ~/Desktop/shellscripts (main)
+$ chmod u+x forloop3.sh
+
+lenovo@DESKTOP-1V10EO8 MINGW64 ~/Desktop/shellscripts (main)
+$ ./forloop3.sh
+anu.shforloop.shforloop3.shshellscriptsgrep: shellscripts: Is a directory
+
