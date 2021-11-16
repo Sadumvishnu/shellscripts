@@ -1,0 +1,24 @@
+lenovo@DESKTOP-1V10EO8 MINGW64 ~/Desktop/shellscripts (main)
+$ vi ifandelif.sh
+
+lenovo@DESKTOP-1V10EO8 MINGW64 ~/Desktop/shellscripts (main)
+$ cat ifandelif.sh
+#!/bin/bash
+if grep "UNIX" myfile >/dev/null
+then
+        echo "UNIX occurs in file"
+elif grep "DOS" myfile >/dev/null
+then
+        echo "unix does not occur, but DOS does"
+else
+        echo "Nobady is there"
+fi
+
+lenovo@DESKTOP-1V10EO8 MINGW64 ~/Desktop/shellscripts (main)
+$ chmod u+x ifandelif.sh
+
+lenovo@DESKTOP-1V10EO8 MINGW64 ~/Desktop/shellscripts (main)
+$ ./ifandelif.sh
+grep: myfile: No such file or directory
+grep: myfile: No such file or directory
+Nobady is there
