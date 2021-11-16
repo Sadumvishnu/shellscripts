@@ -1,0 +1,34 @@
+lenovo@DESKTOP-1V10EO8 MINGW64 ~/Desktop/shellscripts (main)
+$ vi  forloop.sh
+
+lenovo@DESKTOP-1V10EO8 MINGW64 ~/Desktop/shellscripts (main)
+$ cat forloop.sh
+#!/bin/bash
+# file-poke - tell us stuff about files
+files= 'ls'
+for i in $files
+do
+        echo -n "$i"
+        grep $i $i
+done
+
+lenovo@DESKTOP-1V10EO8 MINGW64 ~/Desktop/shellscripts (main)
+$ chmod u
+chmod: missing operand after ‘u’
+Try 'chmod --help' for more information.
+
+lenovo@DESKTOP-1V10EO8 MINGW64 ~/Desktop/shellscripts (main)
+$
+
+lenovo@DESKTOP-1V10EO8 MINGW64 ~/Desktop/shellscripts (main)
+$ chmod u+x forloop.sh
+
+lenovo@DESKTOP-1V10EO8 MINGW64 ~/Desktop/shellscripts (main)
+$ ./forloop.sh
+anu.sh  forloop.sh  shellscripts
+
+lenovo@DESKTOP-1V10EO8 MINGW64 ~/Desktop/shellscripts (main)
+$
+
+
+
