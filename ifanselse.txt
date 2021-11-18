@@ -1,0 +1,22 @@
+lenovo@DESKTOP-1V10EO8 MINGW64 ~/Desktop/shellscripts (main)
+$ vi ifandelse.sh
+
+lenovo@DESKTOP-1V10EO8 MINGW64 ~/Desktop/shellscripts (main)
+$ cat ifandelse.sh
+#!/bin/sh
+if grep "UNIX" myfile >/dev/null
+then
+        echo UNIX occurs in my file
+else
+        echo No!
+        echo UNIX does not occur in myfile
+fi
+
+lenovo@DESKTOP-1V10EO8 MINGW64 ~/Desktop/shellscripts (main)
+$ chmod u+x ifandelse.sh
+
+lenovo@DESKTOP-1V10EO8 MINGW64 ~/Desktop/shellscripts (main)
+$ ./ifandelse.sh
+grep: myfile: No such file or directory
+No!
+UNIX does not occur in myfile
