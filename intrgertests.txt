@@ -1,0 +1,21 @@
+lenovo@DESKTOP-1V10EO8 MINGW64 ~/Desktop/shellscripts (main)
+$ vi integertests.sh
+
+lenovo@DESKTOP-1V10EO8 MINGW64 ~/Desktop/shellscripts (main)
+$ cat integertests.sh
+#1/bin/sh
+smallest=10000
+for i in 5 8 19 8 7 3; do
+        if test $i -it $smallest; then
+                smallest=$i
+        fi
+done
+echo $smallest
+
+lenovo@DESKTOP-1V10EO8 MINGW64 ~/Desktop/shellscripts (main)
+$ chmod u+x integertests.sh
+
+lenovo@DESKTOP-1V10EO8 MINGW64 ~/Desktop/shellscripts (main)
+$ ./integertests.sh
+
+10000
