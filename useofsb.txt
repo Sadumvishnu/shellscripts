@@ -1,0 +1,17 @@
+lenovo@DESKTOP-1V10EO8 MINGW64 ~/Desktop/shellscripts (main)
+$ vi useofsquarebrackets.sh
+
+lenovo@DESKTOP-1V10EO8 MINGW64 ~/Desktop/shellscripts (main)
+$ cat useofsquarebrackets.sh
+#!/bin/sh
+smallest=10000
+for i in 5 8 19 8 7 3; do
+        if [ $i -lt $smallest ] ; then
+                smallest=$i
+        fi
+done
+echo $smallest
+
+lenovo@DESKTOP-1V10EO8 MINGW64 ~/Desktop/shellscripts (main)
+$ ./useofsquarebrackets.sh
+3
