@@ -1,0 +1,29 @@
+lenovo@DESKTOP-1V10EO8 MINGW64 ~/Desktop/shellscripts (main)
+$ vi filetests.sh
+
+lenovo@DESKTOP-1V10EO8 MINGW64 ~/Desktop/shellscripts (main)
+$ cat filetestes.sh
+cat: filetestes.sh: No such file or directory
+
+lenovo@DESKTOP-1V10EO8 MINGW64 ~/Desktop/shellscripts (main)
+$ cat filetests
+cat: filetests: No such file or directory
+
+lenovo@DESKTOP-1V10EO8 MINGW64 ~/Desktop/shellscripts (main)
+$ cat filetests.sh
+#!/bin/sh
+count=0
+for i in *; do
+        if test -x $i; then
+                count='expr $count + 1'
+        fi
+done
+echo Total of $count files executable.
+
+lenovo@DESKTOP-1V10EO8 MINGW64 ~/Desktop/shellscripts (main)
+$ chmod u+x filetests.sh
+
+lenovo@DESKTOP-1V10EO8 MINGW64 ~/Desktop/shellscripts (main)
+$ ./filetests.sh
+Total of expr $count + 1 files executable.
+
