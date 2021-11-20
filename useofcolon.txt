@@ -1,0 +1,25 @@
+lenovo@DESKTOP-1V10EO8 MINGW64 ~/Desktop/shellscripts (main)
+$ vi useofclone.sh
+
+lenovo@DESKTOP-1V10EO8 MINGW64 ~/Desktop/shellscripts (main)
+$ cat useofclone.sh
+#!/bin/sh
+if grep unix myfile
+then
+        :
+else
+        echo "sorry, unix was not found"
+fi
+
+lenovo@DESKTOP-1V10EO8 MINGW64 ~/Desktop/shellscripts (main)
+$ chmod u+x
+chmod: missing operand after ‘u+x’
+Try 'chmod --help' for more information.
+
+lenovo@DESKTOP-1V10EO8 MINGW64 ~/Desktop/shellscripts (main)
+$ chmod u+x useofclone.sh
+
+lenovo@DESKTOP-1V10EO8 MINGW64 ~/Desktop/shellscripts (main)
+$ ./useofclone.sh
+grep: myfile: No such file or directory
+sorry, unix was not found
